@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+<title>ShopEase POS</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+<aside><div class="brand" id="brand"></div><nav id="nav"></nav><div class='promo'><div class='pl'>🛍️</div><b>Quality Products</b><b>Great Prices</b><i>Shop More,<br>Save More</i></div></aside>
+<main><header><button class='ibtn' onclick="document.body.classList.toggle('sb')" aria-label='Toggle menu'>☰</button><div class='sbar'><input id='gs' placeholder='Search products, categories, customers…' onkeydown='gSearch(event)'><kbd>Ctrl K</kbd></div><div class='tr'><button class='btn sm' onclick="go('pos')">＋ New Sale</button><button class='ibtn' onclick="go('inv')" aria-label='Low stock alerts'>🔔<span class='dot' id='bell'></span></button><button class='ibtn' onclick='toggleTheme()' aria-label='Toggle theme'>☀️</button><div class='dt' id='clock'></div><div class='me'><span class='av'>A</span><div><b>Admin</b><small>Store Manager</small></div></div></div><h1 id='title' hidden></h1></header><div class="page" id="page"></div></main>
+</div>
+<div id="modal"></div><div id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>
